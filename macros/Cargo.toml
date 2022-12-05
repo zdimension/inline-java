@@ -1,0 +1,19 @@
+[package]
+name = "inline-java-macros"
+version = "0.1.0"
+authors = ["Tom Niget <niget.tom@gmail.com>"]
+description = "Macros for the `inline-java` crate"
+homepage = "https://github.com/zdimension/inline-java"
+repository = "https://github.com/zdimension/inline-java"
+documentation = "https://docs.rs/inline-java"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+readme = "README.md"
+keywords = ["inline", "rust", "java"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = { version = "1.0", features = ["span-locations"] }
+quote = "1.0.21"

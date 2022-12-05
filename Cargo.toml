@@ -1,0 +1,27 @@
+[package]
+name = "inline-java"
+version = "0.1.0"
+authors = ["Tom Niget <niget.tom@gmail.com>"]
+description = "Embed Java code inside Rust"
+homepage = "https://github.com/zdimension/inline-java"
+repository = "https://github.com/zdimension/inline-java"
+documentation = "https://docs.rs/inline-java"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+readme = "README.md"
+keywords = ["inline", "rust", "java"]
+exclude = [
+    ".idea/*"
+]
+
+[dependencies]
+inline-java-macros = { version = "=0.1.0", path = "./macros" }
+j4rs = "0.14.0"
+serde = "1.0.148"
+jni-sys = "0.3"
+
+[build-dependencies]
+jerk = "0.2"
+
+[dev-dependencies]
+jerk = "0.2"

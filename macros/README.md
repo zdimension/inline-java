@@ -1,0 +1,1 @@
+Crate containing procedural macros for [inline-java](https://github.com/zdimension/inline-java).
